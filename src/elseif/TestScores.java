@@ -9,6 +9,8 @@ public static void main(String[] args) {
 	if (score >= 100) {
 		JOptionPane.showMessageDialog(null, "Your score is an A++.");
 		JOptionPane.showMessageDialog(null, "How could you possibly get more than 100 on your test?");
+		JOptionPane.showMessageDialog(null, "You aced the test.");
+		JOptionPane.showMessageDialog(null, "Must have been extra credit.");
 	}
 	else if (score == 100) {
 		JOptionPane.showMessageDialog(null, "Your score is an A+.");
@@ -58,7 +60,7 @@ public static void main(String[] args) {
 		JOptionPane.showMessageDialog(null, "Your score is an D-.");
 		JOptionPane.showMessageDialog(null, "You barely passed the test.");
 	}
-	else if (score <= 59) {
+	else if (score == 59 || score == 58 || score == 57 || score == 56 || score == 55 || score == 54 || score == 53 || score == 52 || score == 51 || score == 50 || score == 49 || score == 48 || score == 47 || score == 46 || score == 45 || score == 44 || score == 43 || score == 42 || score == 41 || score == 40 || score == 39 || score == 38 || score == 37 || score == 36 || score == 35 || score == 34 || score == 33 || score == 32 || score == 31 || score == 30 || score == 29 || score == 28 || score == 27 || score == 26 || score == 25 || score == 24 || score == 23 || score == 22 || score == 21 || score == 20 || score == 19 || score == 18 || score == 17 || score == 16 || score == 15 || score == 14 || score == 13 || score == 12 || score == 11 || score == 10 || score == 9 || score == 8 || score == 7 || score == 6 || score == 5 || score == 4 || score == 3 || score == 2 || score == 1 || score == 0) {
 		JOptionPane.showMessageDialog(null, "Your score is an F.");
 		JOptionPane.showMessageDialog(null, "You failed the test.");
 		JOptionPane.showMessageDialog(null, "Better luck next test.");
@@ -66,7 +68,8 @@ public static void main(String[] args) {
 	else if (score <= -1) {
 		JOptionPane.showMessageDialog(null, "Your score is an F-.");
 		JOptionPane.showMessageDialog(null, "How could you possibly get a score that bad on a test?");
-		JOptionPane.showMessageDialog(null, "Better luck next test.");
+		JOptionPane.showMessageDialog(null, "You failed so bad that you got a score less than 0.");
+		JOptionPane.showMessageDialog(null, "Ya dun goofed.");
 	}
 }
 }
