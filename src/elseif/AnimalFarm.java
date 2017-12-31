@@ -13,17 +13,42 @@ import javax.swing.JOptionPane;
 public class AnimalFarm {
 
 	AnimalFarm() {
-		/*
+		for (int i = 0; i < 1000; i++) {
+			/*
 		 * 1. Ask the user which animal they want, then play the sound of that
 		 * animal.
 		 */
-
+String Animal =JOptionPane.showInputDialog("What animal do you want to hear?");
 		/* 2. Make it so that the user can keep entering new animals. */
-	}
 
-	void playMoo() {
-		playNoise(mooFile);
+if(Animal .equalsIgnoreCase ("cow")) {
+	playMoo();
+}
+else if(Animal .equalsIgnoreCase ("duck")) {
+	playQuack();
+}
+else if(Animal .equalsIgnoreCase ("dog")) {
+	playWoof();
+}
+else if(Animal .equalsIgnoreCase ("cat")) {
+	playMeow();
+}
+else if(Animal .equalsIgnoreCase ("llama")) {
+	playLlama();
+}
+else {
+	JOptionPane.showMessageDialog(null, "I don't have that animal in my farm so here's a llama sound.");
+	playLlama();
+}
 	}
+		}
+		
+
+void playMoo() {
+		playNoise(mooFile);
+	}	
+
+	
 
 	void playQuack() {
 		playNoise(quackFile);
@@ -31,6 +56,14 @@ public class AnimalFarm {
 
 	void playWoof() {
 		playNoise(woofFile);
+	}
+	
+	void playMeow() {
+		playNoise(meowFile);
+	}
+	
+	void playLlama() {
+		playNoise(llamaFile);
 	}
 
 	  String quackFile = "/Users/League/Google Drive/league-sounds/quack.wav";

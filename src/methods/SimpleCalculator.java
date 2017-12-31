@@ -11,8 +11,8 @@ public class SimpleCalculator {
 		// 1. Get 2 numbers from the user and convert them to integer.
 
 		// 2. Customize pop-up to support add/subtract/multiply/divide operations.
-		int operation = JOptionPane.showOptionDialog(null, "The question", "Pop-up Title", 0,
-				JOptionPane.INFORMATION_MESSAGE, null, new String[] { "Button1", "Button2", "Button3", "Button3" },
+		int operation = JOptionPane.showOptionDialog(null, "Are you color blind? click <html><p style=\\\"color:red\\\">Red</p></html> to find out.", "Question", 0,
+				JOptionPane.INFORMATION_MESSAGE, null, new String[] { "<html><p style=\"color:blue\">Red</p></html>", "<html><p style=\"color:green\">Black</p></html>", "<html><p style=\"color:red\">Green</p></html>", "<html><p style=\"color:Black\">Blue</p></html>" },
 				null);
 
 		// 5. Call the methods created in steps 3 and 4 to perform the appropriate operation.
